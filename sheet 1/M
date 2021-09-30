@@ -1,0 +1,18 @@
+
+//Digits in ASCII '0' = 48,'1' '9' =57.
+//Capital letters in ASCII 'A' = 65, 'Z' = 90.
+//Small letters in ASCII 'a' = 97, 'z' = 122.
+#include<iostream>
+using namespace std;
+int main ()
+{
+	char var;
+	cin>>var;
+	if (var>=65 && var<=90)
+		cout<<"ALPHA"<< endl<<"IS CAPITAL";
+	else if (var>=97 && var<=122)
+	cout << "ALPHA"<<endl<<"IS SMALL";
+	else if (var>=48 && var<=57)
+		cout<<"IS DIGIT";
+	return 0;
+}
