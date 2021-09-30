@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+ int a, b, c;
+ cin>>a>>b>>c;     // 5 8 1  //8 1 5  // 1 5 8 //5 1 8
+ if( min(a,min(b,c)) == c && a<=b)
+   cout<<c<<endl<<a<<endl<<b<<endl;
+   else if( min(a,min(b,c)) == c && b<=a)
+ cout<<c<<endl<<b<<endl<<a<<endl;
+  else if( min(a,min(b,c)) == a && b<=c)
+   cout<<a<<endl<<b<<endl<<c<<endl;
+   else if( min(a,min(b,c)) == a && c<=b)
+ cout<<a<<endl<<c<<endl<<b<<endl;
+ else if( min(a,min(b,c)) == b && a<=c)
+   cout<<b<<endl<<a<<endl<<c<<endl;
+  else if( min(a,min(b,c)) == b && c<=a)
+    cout<<b<<endl<<c<<endl<<a<<endl;
+ cout <<endl<< a <<endl<<b<<endl<<c;
+  return 0;
+}
