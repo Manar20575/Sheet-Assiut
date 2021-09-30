@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int x, y, z, t, a, b, c , d;
+      cin >> x >> y >> z >> t;
+      a = (x%100) * (y%100) * (z%100) * (t%100);
+      b = a % (10*10);
+      if (b< 10)
+      {
+      cout << 0 ;
+      cout << b ;
+      }
+      else
+      {
+        cout << b;
+      }
+
+    return 0;
+  }
