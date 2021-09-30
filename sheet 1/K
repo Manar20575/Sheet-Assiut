@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int min,max;
+ int arr[3];
+ for (int i = 0 ; i<3 ; i++){
+     cin>>arr[i];
+ }
+ min=arr[0];
+ for(int i = 0;i<3;i++ ){
+     if(arr[i]<min){
+         min=arr[i];
+     }
+ }
+ cout<<min<<" ";
+ max=arr[0];
+ for(int i = 0;i<3;i++ ){
+     if(arr[i]>max){
+         max=arr[i];
+     }
+ }
+ cout<<max;
+    return 0;
+}
