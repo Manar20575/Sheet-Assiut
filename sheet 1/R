@@ -1,0 +1,19 @@
+ #include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+int main() {
+    int n, n1, n2, n3, n4, c, c1;
+    cin>>n;
+       n1=floor(n/365);
+       c=n1*365;
+       n2=n-c;
+       cout<<n1<<" "<<"years"<<endl;
+       n3=floor(n2/30);
+       c1=n3*30;
+       n4=n2-c1;
+       cout<<n3<<" "<<"months"<<endl;
+       cout<<n4<<" "<<"days";
+    
+    return 0;
+}
