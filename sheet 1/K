@@ -1,4 +1,23 @@
-
+#include <iostream>
+using namespace std;
+int main() {
+    int A, B, C, min=0, max=0;
+    cin>>A>>B>>C;
+    if (A >= B && A >= C)
+        max = A;
+    if(B >= A && B >= C)
+        max = B;
+    if (C >= A && C >= B)
+        max = C;
+    if (A <= B && A <= C)
+        min = A;
+     if(B <= A && B <= C)
+        min = B;
+    if (C <= A && C <= B)
+        min = C;
+      cout << min << " "<<max;
+    return 0;
+}
 #include <iostream>
 using namespace std;
 int main() {
