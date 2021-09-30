@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+  char var;
+  cin>>var;
+  if (var >= 65 && var <= 90){  // mean that is capital
+      cout << char(var+32);
+  }
+  if (var >= 97 && var <= 122){  // mean that is small
+      cout << char(var-32);
+  }
+  return 0;
+}
