@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int num1, num2;
+    char s;
+    cin>>num1>>s>>num2;
+    if (s == '+')
+    cout<<num1+num2;
+    if (s == '-')
+    cout<<num1-num2;
+    if (s == '*')
+    cout<<num1*num2;
+    if (s == '/')
+    cout<<num1/num2;
+    return 0;
+}
