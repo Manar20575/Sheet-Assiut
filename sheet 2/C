@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,even = 0, odd = 0, po = 0, ne = 0;
+    cin>>n;
+  int num[n];
+  for(int i= 0; i<n; i++)
+  cin>>num[i];
+  for(int i= 0; i<n; i++)
+  if(num[i] % 2 == 0)
+  even++;
+  else
+  odd++;
+  for(int i= 0;i<n;i++)
+  if (num[i] > 0) 
+  po++;
+  else if (num[i] < 0) 
+  ne++;
+  cout<<"Even: "<<even<<endl;
+  cout<<"Odd: "<<odd<<endl;
+  cout<<"Positive: "<<po<<endl;
+  cout<<"Negative: "<<ne<<endl;
+  return 0;
+}
