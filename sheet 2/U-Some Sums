@@ -1,0 +1,49 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int sumdigit(int n){
+    int sum = 0;
+    int m;
+    while(n>0)    
+{    
+m=n%10;    
+sum=sum+m;    
+n=n/10;    
+}  
+return sum;
+}
+int main() {
+ int n, a, b, total = 0;
+ cin >> n >> a >> b;
+ for(int i = 1; i<=n;i++){
+     if(sumdigit(i)>=a && sumdigit(i)<=b){
+     total = total + i;
+ }
+ }
+ cout << total;
+    return 0;
+}
+----------------------------------------------------------------------------
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+ int n, a, b, m, c, total = 0 ;
+ cin >> n >> a >> b;
+ for(int i = 1; i<=n;i++){
+     c=i;
+int sum=0;
+while (c >0)
+{
+sum+=c%10;
+c=c/10;
+}
+//cout <<"sum = "<< sum <<endl;
+  if(sum>=a && sum<=b){
+     total = total + i;
+ }
+      sum = 0;
+ }
+ cout << total;
+  return 0;
+}
