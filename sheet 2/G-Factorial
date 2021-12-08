@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    long long n, f = 1, t;
+    cin>>t;
+    for (int i = t; i>0; i--){
+    cin >> n;
+    for(int i = 1; i<=n; i++)
+    f = f*i;
+    cout <<f <<endl;
+    f=1;
+    }
+    return 0;
+}
