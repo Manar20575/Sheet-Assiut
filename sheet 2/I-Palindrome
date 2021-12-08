@@ -1,0 +1,22 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int n, sum = 0, last, real;
+    cin>>n;
+    real = n;
+    while (n>0){ // n= 12421  //1242  124  12 1  0==false==>> out  452  45 4
+    last = n%10;  // l = 1   2  4   2  1  2  5  4
+    sum = (sum*10)+last;  // 1  12   12*10+4  124 124*10+2  1242 12421 2 52 524
+    n/=10;   // n= 1242  124  12  1  0  45 4
+}
+if (real==sum){
+    cout << sum <<endl;
+    cout << "YES";
+}
+else {
+    cout << sum <<endl;
+    cout << "NO";
+}
+    return 0;
+}
