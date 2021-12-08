@@ -1,0 +1,17 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+int a, b, m = 0, max1 = 0;
+cin >> a >> b;
+int z = max(a, b);
+ for ( int i = 1; i <= z; i++){
+     if(a % i == 0 && b % i == 0){
+      max1 = max(m, i);
+     m = i;
+     }
+}
+cout << max1;
+    return 0;
+}
