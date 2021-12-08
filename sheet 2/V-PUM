@@ -1,0 +1,17 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+ for (int i = 1; i<=n*4;i++){ // 7 ==>7pum
+  if (i%4==0)
+    cout <<"PUM"<<endl;
+    //continue;
+    else 
+    cout << i <<  " ";
+     
+ }
+    return 0;
+}
